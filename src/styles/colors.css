@@ -1,0 +1,22 @@
+:root {
+  --sbssu-red: #D22619;
+  --sbssu-yellow: #FBFB94;
+  --sbssu-green: #BCE180;
+  --sbssu-darkred: #D90D04;
+  --sbssu-black: #1F1A16;
+  --sbssu-cream: #FAFCF6;
+}
+
+.text-sb-red { color: var(--sbssu-red); }
+.text-sb-yellow { color: var(--sbssu-yellow); }
+.text-sb-green { color: var(--sbssu-green); }
+.text-sb-darkred { color: var(--sbssu-darkred); }
+.text-sb-black { color: var(--sbssu-black); }
+.text-sb-cream { color: var(--sbssu-cream); }
+
+.bg-sb-red { background-color: var(--sbssu-red); }
+.bg-sb-yellow { background-color: var(--sbssu-yellow); }
+.bg-sb-green { background-color: var(--sbssu-green); }
+.bg-sb-darkred { background-color: var(--sbssu-darkred); }
+.bg-sb-black { background-color: var(--sbssu-black); }
+.bg-sb-cream { background-color: var(--sbssu-cream); }

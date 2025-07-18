@@ -1,0 +1,22 @@
+.slider-container {
+  width: 100vw;
+  height: 80vh; /* ↓ reduced from 100vh */
+  overflow: hidden;
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+.slider-track {
+  display: flex;
+  width: fit-content;
+  height: 100%;
+}
+
+.slider-image {
+  flex-shrink: 0;
+  width: 100vw;
+  height: 80vh; /* ↓ same reduced height */
+  object-fit: cover;
+}
