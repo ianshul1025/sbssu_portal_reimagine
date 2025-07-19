@@ -1,7 +1,5 @@
 @import "tailwindcss";
 
-
-
 @layer utilities {
   @keyframes scroll {
     0% {
@@ -16,4 +14,3 @@
     animation: scroll 40s linear infinite;
   }
 }
-

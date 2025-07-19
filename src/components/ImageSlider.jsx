@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 import "./ImageSlider.css";
 
 const images = [
@@ -10,26 +10,23 @@ const images = [
 const ImageSlider = () => {
   const [index, setIndex] = useState(0);
   const [isAnimating, setIsAnimating] = useState(true);
-  const sliderRef = useRef(null);
 
-  // Duplicate first image for smooth loop
   const fullImages = [...images, images[0]];
 
   useEffect(() => {
     const interval = setInterval(() => {
       setIndex((prevIndex) => prevIndex + 1);
-    }, 3000); // pause 3 seconds
+    }, 6000); // 6 seconds between slides
 
     return () => clearInterval(interval);
   }, []);
 
   useEffect(() => {
     if (index === images.length) {
-      // After showing clone, instantly jump to real first
       setTimeout(() => {
         setIsAnimating(false);
         setIndex(0);
-      }, 1000); // after transition ends
+      }, 3000); // match transition time
     } else {
       setIsAnimating(true);
     }
@@ -39,10 +36,9 @@ const ImageSlider = () => {
     <div className="slider-container">
       <div
         className="slider-track"
-        ref={sliderRef}
         style={{
-          transform: `translateX(-${index * 100}vw)`,
-          transition: isAnimating ? "transform 1s ease-in-out" : "none",
+           transform: `translateX(-${index * 100}%)`,
+          transition: isAnimating ? "transform 3s ease-in-out" : "none",
         }}
       >
         {fullImages.map((src, i) => (

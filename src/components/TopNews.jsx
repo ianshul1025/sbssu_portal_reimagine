@@ -2,34 +2,43 @@ import "./TopNews.css";
 
 const newsItems = [
   {
-    image: "https://www.sbssugsp.ac.in/assets/images/slider/sliderimage1-new.jpg",
-    title: "Campus Placement Drive 2025",
-    link: "/news/placement-drive-2025",
+    image: "https://www.sbssugsp.ac.in/assets/images/news/convocation.jpg",
+    title: "8th Convocation Ceremony",
+    link: "#",
   },
   {
-    image: "https://www.sbssugsp.ac.in/assets/images/slider/sliderimage2.jpg",
-    title: "Research Seminar by Dr. Sharma",
-    link: "/news/research-seminar-sharma",
+    image: "https://www.sbssugsp.ac.in/assets/images/news/fdp.jpg",
+    title: "Faculty Development Programme",
+    link: "#",
   },
   {
-    image: "https://www.sbssugsp.ac.in/assets/images/slider/sliderimage4.jpg",
-    title: "Annual Sports Meet Highlights",
-    link: "/news/sports-meet-2025",
+    image: "https://www.sbssugsp.ac.in/assets/images/news/hackathon.jpg",
+    title: "Hackathon Winners Announced",
+    link: "#",
+  },
+  {
+    image: "https://www.sbssugsp.ac.in/assets/images/news/sports-meet.jpg",
+    title: "Annual Sports Meet",
+    link: "#",
   },
 ];
 
 const TopNews = () => {
-  const doubled = [...newsItems, ...newsItems]; // duplicate for seamless scroll
-
   return (
-    <div className="top-news-section">
-      <h2 className="news-heading">Top News</h2>
-      <div className="news-marquee">
+    <div className="top-news-wrapper">
+      <h2 className="top-news-title">Top News</h2>
+      <div className="news-scroll-container">
         <div className="news-track">
-          {doubled.map((news, index) => (
-            <a href={news.link} key={index} className="news-card">
-              <img src={news.image} alt={`news-${index}`} className="news-img" />
-              <p className="news-title">{news.title}</p>
+          {newsItems.concat(newsItems).map((news, i) => (
+            <a
+              key={i}
+              href={news.link}
+              className="news-card"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img src={news.image} alt={news.title} />
+              <div className="news-overlay">{news.title}</div>
             </a>
           ))}
         </div>
