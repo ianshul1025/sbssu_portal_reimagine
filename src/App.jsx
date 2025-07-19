@@ -6,47 +6,85 @@ import Academics from './pages/Academics/Academics'
 import Admissions from './pages/Admissions/Admissions'
 import Campus from './pages/CampusLife/CampusLife'
 import Placements from './pages/Placements/Placements'
-import Alumni from './pages/Alumni'
+import Alumni from './pages/Alumni/Alumni'
 import Footer from './components/Footer/Footer'
+import Header from './components/Header/Header'
 
 const router = createBrowserRouter([
   {
     path: '/',
-    element: <Home />,
+    element: (
+      <>
+        <Header />
+        <Home />
+        <Footer />
+      </>
+    ),
   },
   {
     path: '/about',
-    element: <About />,
+    element: (
+      <>
+        <Header />
+        <About />
+        <Footer />
+      </>
+    ),
   },
   {
     path: '/academics',
-    element: <Academics />,
+    element: (
+      <>
+        <Header />
+        <Academics />
+        <Footer />
+      </>
+    ),
   },
   {
     path: '/admissions',
-    element: <Admissions />,
+    element: (
+      <>
+        <Header />
+        <Admissions />
+        <Footer />
+      </>
+    ),
   },
   {
     path: '/campus',
-    element: <Campus />,
+    element: (
+      <>
+        <Header />
+        <Campus />
+        <Footer />
+      </>
+    ),
   },
   {
     path: '/placements',
-    element: <Placements />,
+    element: (
+      <>
+        <Header />
+        <Placements />
+        <Footer />
+      </>
+    ),
   },
   {
     path: '/alumni',
-    element: <Alumni />,
+    element: (
+      <>
+        <Header />
+        <Alumni />
+        <Footer />
+      </>
+    ),
   },
 ])
 
 const App = () => {
-  return (
-    <>
-      <RouterProvider router={router} />
-      <Footer />
-    </>
-  )
+  return <RouterProvider router={router} />
 }
 
 export default App
