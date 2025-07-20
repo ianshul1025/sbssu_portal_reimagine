@@ -1,6 +1,6 @@
 import React from "react";
 import { useParams } from "react-router-dom";
-import AboutData from "./Deans/AboutData";
+import AboutData from "./AboutData";
 
 const SingleAbout = () => {
   const { id } = useParams();

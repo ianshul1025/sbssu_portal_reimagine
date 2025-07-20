@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import AboutData from "./Deans/AboutData";
+import AboutData from "./AboutData";
 
 const Allabout = () => {
   return (

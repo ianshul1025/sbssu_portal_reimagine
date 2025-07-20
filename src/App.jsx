@@ -10,8 +10,8 @@ import Placements from './pages/Placements/Placements'
 import Alumni from './pages/Alumni/Alumni'
 import Footer from './components/Footer/Footer'
 import Header from './components/Header/Header'
-import SingleAbout from './pages/About/singleAbout'
-import Allabout from './pages/About/Allabout'
+import SingleAbout from './pages/About/Deans/SingleAbout'
+import Allabout from './pages/About/Deans/Allabout'
 // import SingleAbout from './pages/About/singleAbout'
 
 
