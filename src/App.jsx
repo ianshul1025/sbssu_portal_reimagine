@@ -1,7 +1,8 @@
 import React from 'react'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Home from './pages/Home'
-import About from './pages/About/About'
+import About from './pages/About/Deans/AboutData'
+
 import Academics from './pages/Academics/Academics'
 import Admissions from './pages/Admissions/Admissions'
 import Campus from './pages/CampusLife/CampusLife'
@@ -9,6 +10,12 @@ import Placements from './pages/Placements/Placements'
 import Alumni from './pages/Alumni/Alumni'
 import Footer from './components/Footer/Footer'
 import Header from './components/Header/Header'
+import SingleAbout from './pages/About/singleAbout'
+import Allabout from './pages/About/Allabout'
+// import SingleAbout from './pages/About/singleAbout'
+
+
+
 
 const router = createBrowserRouter([
   {
@@ -26,11 +33,61 @@ const router = createBrowserRouter([
     element: (
       <>
         <Header />
-        <About />
+        <Allabout />
         <Footer />
       </>
     ),
+  }, 
+  {
+    path:'/about/:id',
+    element:(
+         <>
+         <Header/>
+            <SingleAbout />
+          <Footer/>
+         </>
+  )
   },
+  // {
+  //   path:'/about/dean-academics',
+  //   element: (
+  //        <>
+  //           <Header />
+  //           <DeanAcademics />
+  //           <Footer />
+  //        </>
+  //   ),
+  // },
+  // {
+  //   path:'/about/dean-plannings',
+  //   element: (
+  //        <>
+  //           <Header />
+  //           <DeanPlanning />
+  //           <Footer />
+  //        </>
+  //   ),
+  // },
+  // {
+  //   path:'/about/dean-welfare',
+  //   element: (
+  //        <>
+  //           <Header />
+  //           <DeanWelfare />
+  //           <Footer />
+  //        </>
+  //   ),
+  // },
+  // {
+  //   path:'/about/dean-r&d',
+  //   element: (
+  //        <>
+  //           <Header />
+  //           <DeanRD />
+  //           <Footer />
+  //        </>
+  //   ),
+  // },
   {
     path: '/academics',
     element: (
@@ -81,6 +138,7 @@ const router = createBrowserRouter([
       </>
     ),
   },
+ 
 ])
 
 const App = () => {
