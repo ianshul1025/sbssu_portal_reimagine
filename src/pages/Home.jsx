@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import ImageSlider from "../components/ImageSlider";
+import SwiperSlider from "../components/SwiperSlider";
 import TopNews from "../components/TopNews";
 import VideoWithNotifications from "../components/VideoWithNotifications";
 import CampusPulse from "../components/CampusPulse";
@@ -13,7 +13,7 @@ const Home = () => {
     <div className="min-h-screen bg-sb-cream overflow-x-hidden">
       <Navbar />
       <main>
-        <ImageSlider />
+        <SwiperSlider />
         <TopNews />
         <VideoWithNotifications />
         <CampusPulse />

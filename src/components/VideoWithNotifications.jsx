@@ -45,16 +45,18 @@ const VideoWithNotifications = () => {
     <div className="video-notif-section">
       <div className="video-container">
         <iframe
-          src="https://www.youtube.com/embed/SeGpmyE22FI?si=KaOzru74Cgx4QpZd"
-          title="University Video"
-          frameBorder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowFullScreen
-        ></iframe>
+  src="https://www.youtube.com/embed/SeGpmyE22FI?autoplay=1&mute=1&loop=1&playlist=SeGpmyE22FI&rel=0&showinfo=0"
+  title="University Video"
+  frameBorder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+  allowFullScreen
+></iframe>
+
+
       </div>
 
       <div className="notif-wrapper">
-        <div className="notif-title">📢 Notifications</div>
+        <div className="notif-title">Notifications</div>
         {notifications.map((note, i) => (
           <div
             className="notification"

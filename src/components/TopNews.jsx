@@ -2,46 +2,71 @@ import "./TopNews.css";
 
 const newsItems = [
   {
-    image: "https://www.sbssugsp.ac.in/assets/images/news/convocation.jpg",
-    title: "8th Convocation Ceremony",
+    image: "/assets/directadmission.jpg",
+    title: "Direct Admissions",
     link: "#",
   },
   {
-    image: "https://www.sbssugsp.ac.in/assets/images/news/fdp.jpg",
-    title: "Faculty Development Programme",
+    image: "/assets/new-admissions.jpg",
+    title: "Admissions Open for 2025-26",
     link: "#",
   },
   {
-    image: "https://www.sbssugsp.ac.in/assets/images/news/hackathon.jpg",
-    title: "Hackathon Winners Announced",
+    image: "/assets/craig-banks.jpg",
+    title: "Prof Craig E Banks",
     link: "#",
   },
   {
-    image: "https://www.sbssugsp.ac.in/assets/images/news/sports-meet.jpg",
-    title: "Annual Sports Meet",
+    image: "/assets/governorpunjab.jpg",
+    title: "Gov. Sh. Gulab Chand Kataria",
+    link: "#",
+  },
+  {
+    image: "/assets/empunjab.jpg",
+    title: "Sh. Harjot Singh Bains",
+    link: "#",
+  },
+  {
+    image: "/assets/registerationsopen.jpg",
+    title: "Registerations Open for 2025-26",
+    link: "#",
+  },
+  {
+    image: "/assets/startuppunjab.jpg",
+    title: "Handholding Startups",
+    link: "#",
+  },
+  {
+    image: "/assets/uplcampusplacement.jpg",
+    title: "Campus Placement",
+    link: "#",
+  },
+  {
+    image: "/assets/worldenvironmentday.jpg",
+    title: "World Environment Day",
     link: "#",
   },
 ];
+
 
 const TopNews = () => {
   return (
     <div className="top-news-wrapper">
       <h2 className="top-news-title">Top News</h2>
-      <div className="news-scroll-container">
-        <div className="news-track">
-          {newsItems.concat(newsItems).map((news, i) => (
-            <a
-              key={i}
-              href={news.link}
-              className="news-card"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <img src={news.image} alt={news.title} />
-              <div className="news-overlay">{news.title}</div>
-            </a>
-          ))}
-        </div>
+
+      <div className="news-track">
+        {newsItems.concat(newsItems).map((news, i) => (
+          <a
+            key={i}
+            href={news.link}
+            className="news-card"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <img src={news.image} alt={news.title} />
+            <div className="news-overlay">{news.title}</div>
+          </a>
+        ))}
       </div>
     </div>
   );
