@@ -12,7 +12,7 @@ import Footer from './components/Footer/Footer'
 import Header from './components/Header/Header'
 import SingleAbout from './pages/About/Deans/SingleAbout'
 import Allabout from './pages/About/Deans/Allabout'
-// import SingleAbout from './pages/About/singleAbout'
+import LeaderShip from './pages/About/LeaderShip/LeaderShip'
 
 
 
@@ -48,46 +48,18 @@ const router = createBrowserRouter([
          </>
   )
   },
-  // {
-  //   path:'/about/dean-academics',
-  //   element: (
-  //        <>
-  //           <Header />
-  //           <DeanAcademics />
-  //           <Footer />
-  //        </>
-  //   ),
-  // },
-  // {
-  //   path:'/about/dean-plannings',
-  //   element: (
-  //        <>
-  //           <Header />
-  //           <DeanPlanning />
-  //           <Footer />
-  //        </>
-  //   ),
-  // },
-  // {
-  //   path:'/about/dean-welfare',
-  //   element: (
-  //        <>
-  //           <Header />
-  //           <DeanWelfare />
-  //           <Footer />
-  //        </>
-  //   ),
-  // },
-  // {
-  //   path:'/about/dean-r&d',
-  //   element: (
-  //        <>
-  //           <Header />
-  //           <DeanRD />
-  //           <Footer />
-  //        </>
-  //   ),
-  // },
+ {
+    path:'/about/leadership/:id',
+    element:(
+         <>
+         <Header/>
+            <LeaderShip />
+          <Footer/>
+         </>
+  )
+  },
+
+ 
   {
     path: '/academics',
     element: (
