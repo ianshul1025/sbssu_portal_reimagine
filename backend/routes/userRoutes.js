@@ -1,9 +1,7 @@
-// routes/userRoutes.js
 const express = require("express");
 const router = express.Router();
 const User = require("../models/User");
 
-// Register route: /api/users/register
 router.post("/register", async (req, res) => {
   try {
     const { name, email, password } = req.body;

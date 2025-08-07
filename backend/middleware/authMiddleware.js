@@ -11,10 +11,8 @@ const protect = async (req, res, next) => {
     try {
       token = req.headers.authorization.split(" ")[1];
 
-      // Verify token
       const decoded = jwt.verify(token, process.env.JWT_SECRET);
 
-      // Attach user to request object (excluding password)
       req.user = await User.findById(decoded.userId).select("-password");
 
       if (!req.user) {

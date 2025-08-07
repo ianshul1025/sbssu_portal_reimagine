@@ -26,7 +26,7 @@ const Navbar = () => {
         <nav className="hidden md:flex gap-6 text-sm font-medium">
           <div className="relative group">
             <div className="flex items-center gap-1 cursor-pointer">
-              <span>ABOUT US</span>
+              <span><a href="/about">ABOUT US</a></span>
               <ChevronDownIcon />
             </div>
             <div className="absolute left-0 top-full mt-2 bg-white text-[#222222] shadow-lg p-6 grid grid-cols-2 gap-6 w-[400px] opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
@@ -51,7 +51,7 @@ const Navbar = () => {
                 <p className="font-bold mb-2">Deans / Functional Heads</p>
                 <ul className="space-y-1">
                   <li>
-                    <Link to="/dean-pnd">Dean Planning & Development</Link>
+                    <Link to="/dean-plannings">Dean Planning & Development</Link>
                   </li>
                   <li>
                     <Link to="/dean-academics">Dean Academic Affairs</Link>

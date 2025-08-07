@@ -8,7 +8,6 @@
   overflow-x: hidden;
 }
 
-/* Updated flex ratios: video wider, notification narrower */
 .video-part {
   flex: 2 1 38%;
   min-width: 320px;
@@ -23,9 +22,8 @@
   flex-direction: column;
 }
 
-/* Section title styling for both sides */
 .section-title {
-  font-size: 1.9rem;
+  font-size: clamp(1.3rem, 3vw, 2rem);
   font-weight: bolder;
   text-align: center;
   margin-bottom: 1rem;
@@ -33,7 +31,7 @@
 }
 
 .video-container {
-  height: 450px;
+  height: clamp(250px, 40vw, 450px);
 }
 
 .video-container iframe {
@@ -52,10 +50,6 @@
   box-shadow: 0 0 8px rgba(0, 128, 0, 0.1);
 }
 
-.notif-title {
-  display: none;
-}
-
 .notification {
   background-color: #C9ED89;
   color: black;
@@ -69,4 +63,32 @@
 
 .notification:hover {
   background-color: #BBB2AB;
+}
+
+@media (max-width: 768px) {
+  .video-notif-section {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .video-part,
+  .notif-part {
+    flex: 1 1 100%;
+    min-width: 100%;
+  }
+
+  .video-container,
+  .notif-wrapper {
+    height: auto;
+    max-height: none;
+  }
+
+  .notif-wrapper {
+    padding: 0.75rem;
+  }
+
+  .notification {
+    padding: 0.6rem;
+    font-size: 0.95rem;
+  }
 }

@@ -9,7 +9,7 @@ import {
   FaEnvelope,
   FaClock,
 } from "react-icons/fa";
-import "./Footer.css"; // Assuming you have a CSS file for styling
+import "./Footer.css"; 
 
 const Footer = () => {
   const footerRef = useRef(null);
@@ -34,7 +34,6 @@ const Footer = () => {
 
   return (
     <div className="relative overflow-hidden">
-      {/* Parallax Background Image */}
       <div
         className={`w-full h-64 bg-center bg-cover transition-transform duration-[1200ms] ease-in-out ${
           inView ? "translate-y-0" : "translate-y-20"
@@ -45,13 +44,11 @@ const Footer = () => {
         }}
       ></div>
 
-      {/* Footer Content */}
       <footer
         ref={footerRef}
         className="bg-gray-900 text-white pt-7 pb-4 relative z-10 -mt-10"
       >
         <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
-          {/* Column 1: Contact Us */}
           <div>
             <h3 className="text-xl font-semibold mb-4">Contact Us</h3>
             <img
@@ -77,7 +74,6 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* Column 2: Quick Links 1 */}
           <div>
             <h3 className="text-xl font-semibold mb-4">Quick Links 1</h3>
             <ul className="space-y-2">
@@ -119,7 +115,6 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Column 3: Quick Links 2 */}
           <div>
             <h3 className="text-xl font-semibold mb-4">Quick Links 2</h3>
             <ul className="space-y-2">
@@ -146,7 +141,6 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Column 4: Connect with Us */}
           <div>
             <h3 className="text-xl font-semibold mb-4">Connect with Us</h3>
             <div className="flex space-x-4 mb-4">
@@ -184,7 +178,6 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* Copyright */}
         <div className="text-center  text-sm border-t border-gray-700 pt-2 mt-4">
           © 2025 Sardar Beant Singh State University. All rights reserved.
         </div>
