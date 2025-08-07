@@ -15,8 +15,8 @@ const Navbar = () => {
               <div>
                 <p className="font-bold mb-2">Leadership</p>
                 <ul className="space-y-1">
-                  <li>Chancellor</li>
-                  <li>Chairman</li>
+                  <li><Link to = "/about/leadership/leadership-Chancellor">Chancellor</Link></li>
+                  <li><Link to ="/about/leadership/leadership-chairman">Chairman</Link></li>
                   <li>Vice Chancellor</li>
                   <li>Registrar</li>
                 </ul>
