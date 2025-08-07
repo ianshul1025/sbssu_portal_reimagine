@@ -1,16 +1,12 @@
-# ✅ Dependencies
 node_modules/
 
-# ✅ Build output
 dist/
 build/
 dist-ssr/
 
-# ✅ Local environment files
 .env
 *.local
 
-# ✅ Logs
 logs/
 *.log
 npm-debug.log*
@@ -19,7 +15,6 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-# ✅ Editor-specific files/folders
 .vscode/
 !.vscode/extensions.json
 .idea/
@@ -30,6 +25,5 @@ lerna-debug.log*
 *.sln
 *.sw?
 
-# ✅ OS generated files (optional, for safety)
 Thumbs.db
 ehthumbs.db

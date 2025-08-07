@@ -1,9 +1,8 @@
 const express = require("express");
 const router = express.Router();
 const { protect, isAdmin } = require("../middleware/authMiddleware");
-const User = require("../models/userModel"); // Adjust path if needed
+const User = require("../models/userModel"); 
 
-// Updated Student Dashboard Route
 router.get("/profile", protect, async (req, res) => {
   try {
     const user = await User.findById(req.user._id).select(
@@ -37,7 +36,6 @@ router.get("/profile", protect, async (req, res) => {
   }
 });
 
-// Admin Dashboard Route (unchanged)
 router.get("/admin", protect, isAdmin, (req, res) => {
   res.json({
     message: "Welcome to the Admin Dashboard",

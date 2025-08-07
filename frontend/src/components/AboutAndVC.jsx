@@ -5,10 +5,9 @@ const AboutAndVC = () => {
     <section className="py-12 bg-[#BBB2AB]">
       <div className="max-w-7xl mx-auto px-4 md:flex md:space-x-8">
         
-        {/* Left: About SBSSU */}
         <div className="md:w-1/2 mb-8 md:mb-0 flex flex-col md:flex-row items-start bg-gray-50 p-4 rounded-lg shadow-sm">
           <img
-            src="https://imgs.search.brave.com/mza1tY0_DSXH4drO3Dm9NuXhYFAM2Wz14sF39VKrKHk/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jb250/ZW50LmpkbWFnaWNi/b3guY29tL2NvbXAv/Z3VyZGFzcHVyL2I4/Lzk5OTlwMTg3NC4x/ODc0LjIzMDkwODIw/MDA0Ny5zNWI4L2Nh/dGFsb2d1ZS9zYXJk/YXItYmVhbnQtc2lu/Z2gtc3RhdGUtdW5p/dmVyc2l0eS1iYXJ5/YXItZ3VyZGFzcHVy/LXVuaXZlcnNpdGll/cy0xZHl5MDdhb2h1/LmpwZz93PTM4NDAm/cT03NQ" // Replace with your preferred campus image URL
+            src="https://imgs.search.brave.com/mza1tY0_DSXH4drO3Dm9NuXhYFAM2Wz14sF39VKrKHk/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jb250/ZW50LmpkbWFnaWNi/b3guY29tL2NvbXAv/Z3VyZGFzcHVyL2I4/Lzk5OTlwMTg3NC4x/ODc0LjIzMDkwODIw/MDA0Ny5zNWI4L2Nh/dGFsb2d1ZS9zYXJk/YXItYmVhbnQtc2lu/Z2gtc3RhdGUtdW5p/dmVyc2l0eS1iYXJ5/YXItZ3VyZGFzcHVy/LXVuaXZlcnNpdGll/cy0xZHl5MDdhb2h1/LmpwZz93PTM4NDAm/cT03NQ" 
             alt="SBSSU Campus"
             className="w-32 h-32 object-cover rounded mb-4 md:mb-0 md:mr-6 shadow"
           />
@@ -26,7 +25,6 @@ const AboutAndVC = () => {
           </div>
         </div>
 
-        {/* Right: Vice Chancellor's Desk */}
         <div className="md:w-1/2 flex flex-col md:flex-row items-start bg-gray-50 p-4 rounded-lg shadow-sm">
           <img
             src="https://www.sbssugsp.ac.in/assets/images/vc_sir.jpg"
