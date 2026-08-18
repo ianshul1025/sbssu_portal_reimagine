@@ -1,6 +1,7 @@
 import { useForm } from "react-hook-form";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
+import api from "../api/axios";
 
 const Register = () => {
   const {
@@ -13,7 +14,7 @@ const Register = () => {
 
   const onSubmit = async (data) => {
     try {
-      await axios.post("http://localhost:5000/api/users/register", data);
+      await api.post("/users/register", data);
       alert("Registration successful!");
       navigate("/login");
     } catch (err) {

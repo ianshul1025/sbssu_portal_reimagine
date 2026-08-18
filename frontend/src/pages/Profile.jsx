@@ -13,7 +13,7 @@ const Register = () => {
 
   const onSubmit = async (data) => {
     try {
-      await axios.post("http://localhost:5000/api/users/register", data);
+      await api.post("/users/register", data);
       alert("Registration successful!");
       navigate("/login");
     } catch (err) {
